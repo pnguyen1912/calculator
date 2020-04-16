@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linnoob</title>
+</head>
+<style>
+  td {
+    padding: 40px;
+    border-style: solid;
+    border-color: gray;
+    border-radius: 20px;
+    font-size: 100px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+
+  h1 {
+    padding: 40px;
+    border-style: solid;
+    border-color: gray;
+    border-radius: 20px;
+    font-size: 100px;
+    background-color: black;
+    color: white;
+    text-align: right;
+  }
+</style>
+
+<body>
+  <div style="width: 800px; background-color: gray;">
+    <h1 id='linlin'>0</h1>
+    <table style="width: 800px">
+      <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <td onclick="changeMethod('+')">+</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td onclick="changeMethod('-')">-</td>
+      </tr>
+      <tr>
+        <td onclick="addToTemp(1)">1</td>
+        <td onclick="addToTemp(2)">2</td>
+        <td onclick="addToTemp(3)">3</td>
+        <td onclick="changeMethod('*')">*</td>
+      </tr>
+      <tr>
+        <td>0</td>
+        <td onclick="calculate()">=</td>
+        <td>C</td>
+        <td onclick="changeMethod('/')">/</td>
+      </tr>
+    </table>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
